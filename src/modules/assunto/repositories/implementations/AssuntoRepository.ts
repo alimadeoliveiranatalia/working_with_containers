@@ -3,7 +3,7 @@ import { IAssuntoRepository, ICreateUserDTO } from "../IAssuntoRepository";
 
 
 class AssuntosRepository implements IAssuntoRepository {
-    private assuntos = Assunto[];
+    private assuntos : Assunto[];
 
     private static INSTANCE: AssuntosRepository;
 
@@ -17,7 +17,7 @@ class AssuntosRepository implements IAssuntoRepository {
         }
         return AssuntosRepository.INSTANCE;
     }
-    create( assunto : ICreateUserDTO): Assunto {
+    create( {assunto} : ICreateUserDTO): Assunto {
         const assunto_created = new Assunto();
         Object.assign(assunto_created, {
             assunto,
