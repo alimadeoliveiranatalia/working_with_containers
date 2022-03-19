@@ -9,9 +9,9 @@ class CreateAssuntoUseCase {
     constructor(private assuntoRepository: AssuntosRepository){
 
     }
-    execute(assunto: IRequest): Assunto {
+    execute({assunto}: IRequest): Assunto {
         
-        const assunto_created = this.assuntoRepository.create(assunto);
+        const assunto_created = this.assuntoRepository.create({assunto});
         return assunto_created;
     }
 }
