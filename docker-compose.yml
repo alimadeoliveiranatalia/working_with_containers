@@ -1,10 +1,23 @@
 version: '3.8'
 
 services:
+  sqldata:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: Sql_server
+    restart: always
+    environment:
+      - SA_PASSWORD=sqlserver_docker
+      - ACCEPT_EULA=Y
+      - DB=library
+    ports: [5434:1433]
   app:
     build: .
     container_name: working_docker
     ports:
       - 3200:3200
+    links:
+      - sqldata
     volumes:
       - .:/usr/app
+    depends_on:
+      - sqldata
