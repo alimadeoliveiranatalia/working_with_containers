@@ -8,7 +8,7 @@ services:
     environment:
       - SA_PASSWORD=sqlserver_docker
       - ACCEPT_EULA=Y
-      - DB=library
+      - DataBase=library
     ports: [5434:1433]
   app:
     build: .
