@@ -1,18 +1,18 @@
-import { Column, CreateDateColumn, Entity, PrimaryColumn } from "typeorm";
+//import { Column, CreateDateColumn, Entity, PrimaryColumn } from "typeorm";
 import { v4 as uuidv4 } from "uuid";
 
-@Entity("assuntos")
+//@Entity("assuntos")
 class Autor {
-    @PrimaryColumn()
+    //@PrimaryColumn()
     cod_autor: string;
 
-    @Column()
+    //@Column()
     nome_autor!: string;
 
-    @CreateDateColumn()
+    //@CreateDateColumn()
     created_at!: Date;
 
-    @CreateDateColumn()
+    //@CreateDateColumn()
     updated_at!: Date;
 
     constructor(){

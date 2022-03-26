@@ -4,6 +4,9 @@ import { v4 as uuidv4 } from "uuid";
 @Entity("assuntos")
 class Assunto {
     @PrimaryColumn()
+    id!:number;
+
+    @Column()
     cod_assunto: string;
 
     @Column()

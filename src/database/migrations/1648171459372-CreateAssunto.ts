@@ -9,9 +9,13 @@ export class CreateAssunto1648171459372 implements MigrationInterface {
                     name:"assuntos",
                     columns: [
                         {
-                            name:"cod_assunto",
-                            type:"uuid",
+                            name:"id",
+                            type:"int",
                             isPrimary:true
+                        },
+                        {
+                            name:"cod_assunto",
+                            type:"varchar"
                         },
                         {
                             name:"assunto",
@@ -19,8 +23,8 @@ export class CreateAssunto1648171459372 implements MigrationInterface {
                         },
                         {
                             name:"created_at",
-                            type:"timestamp",
-                            default:"now()"
+                            type:"datetime",
+                            default:"CURRENT_TIMESTAMP"
                         }
                     ]
                 }
