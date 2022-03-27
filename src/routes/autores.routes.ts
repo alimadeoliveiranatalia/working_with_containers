@@ -1,15 +1,11 @@
 import { Router } from "express";
-import { createAutorController } from "../modules/autor/useCases/createAutor";
-import { listAllAutoresController } from "../modules/autor/useCases/listAutor";
+import createAutorController from "../modules/livro/useCases/createAutor";
 
-const autoresRoutes = Router();
+const autorRoutes = Router();
 
-autoresRoutes.post("/", (request, response) => {
-    createAutorController.handle(request, response)
-});
+autorRoutes.post("/", (request, response) =>
+createAutorController().handle(request, response)
 
-autoresRoutes.get("/", (request, response) => {
-    listAllAutoresController.handle(request, response)
-});
+);
 
-export { autoresRoutes };
+export { autorRoutes };
