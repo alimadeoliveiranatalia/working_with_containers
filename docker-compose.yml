@@ -6,9 +6,9 @@ services:
     container_name: Sql_server
     restart: always
     environment:
-      - SA_PASSWORD=sqlserver_docker
+      - SA_PASSWORD=
       - ACCEPT_EULA=Y
-      - hostname=sqlserver
+      - hostname=
     ports: [1433:1433]
   app:
     build: .
