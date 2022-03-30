@@ -2,3 +2,4 @@ node_modules/
 ormconfig.json
 .vscode
 docker-compose.yml
+.env
