@@ -11,7 +11,8 @@ export class CreateAssunto1648171459372 implements MigrationInterface {
                         {
                             name:"id",
                             type:"int",
-                            isPrimary:true
+                            isPrimary:true,
+                            
                         },
                         {
                             name:"cod_assunto",
