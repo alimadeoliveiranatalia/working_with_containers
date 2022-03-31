@@ -9,5 +9,9 @@ getConnectionOptions().then(options => {
     newOptions.host = "sqldata";
     createConnection({
         ...options
+    }).then(() => {
+        console.log("Connect Success");
+    }).catch(()=>{
+        console.log("Failed Connect");
     });
 });
