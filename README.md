@@ -1,5 +1,14 @@
 # <h2>API REST para cadastro de livros</h2>
 
+<h4>Principais Tecnologias Utilizadas</h4>
+
+<ul>
+    <li>NodeJS</li>
+    <li>Docker</li>
+    <li>TypeORM</li>
+    <li>Express</li>
+</ul>
+
 <h4>Regras de Negócio</h4>
 
 <ul>
