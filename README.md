@@ -7,6 +7,7 @@
     <li>Docker</li>
     <li>TypeORM</li>
     <li>Express</li>
+    <li>Sql-server</li>
 </ul>
 
 <h4>Regras de Negócio</h4>
