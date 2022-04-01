@@ -1,8 +1,8 @@
-import { Column, Entity, PrimaryColumn } from "typeorm";
+import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 import { v4 as uuid } from "uuid";
 @Entity("tb_editora")
 export class Editora {
-    @PrimaryColumn()
+    @PrimaryGeneratedColumn("uuid")
     cod_editora:string;
     
     @Column()
