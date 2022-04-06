@@ -55,7 +55,8 @@ export class CreateLivro1648826456156 implements MigrationInterface {
                     }
 
                 ]
-            })
+            }),
+            true
         );
         await queryRunner.createForeignKey(
             "tb_livro", 

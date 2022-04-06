@@ -23,12 +23,13 @@ export class CreateAssunto1648774958822 implements MigrationInterface {
                         default:"CURRENT_TIMESTAMP"
                     }
                 ]
-            })
+            }),
+            true
         );
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.dropTable("tb_assunto")
+        await queryRunner.dropTable("tb_assunto");
     }
 
 }

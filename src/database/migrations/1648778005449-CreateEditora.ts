@@ -18,7 +18,8 @@ export class CreateEditora1648778005449 implements MigrationInterface {
                         type:"varchar"
                     }
                 ]
-            })
+            }),
+            true
         );
     }
 

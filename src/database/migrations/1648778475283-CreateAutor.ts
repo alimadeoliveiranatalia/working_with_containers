@@ -28,11 +28,13 @@ export class CreateAutor1648778475283 implements MigrationInterface {
                         default:"CURRENT_TIMESTAMP"
                     }
                 ]
-            })
+            }),
+            true
         );
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
+        await queryRunner.dropTable("tb_autor");
     }
 
 }
