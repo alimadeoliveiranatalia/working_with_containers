@@ -14,6 +14,7 @@ class UserRepository implements IUsersRepository {
             name : data.name,
             email : data.email,
             password: data.password,
+            isAdmin: false,
             created_at: new Date()
         });
         await this.repository.save(user);
